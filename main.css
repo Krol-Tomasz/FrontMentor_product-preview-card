@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	/* Primary */
+	--dark-cyan: hsl(158, 36%, 37%);
+	--cream: hsl(30, 38%, 92%);
+
+	/* Neutral */
+	--very-dark-blue: hsl(212, 21%, 14%);
+	--dark-grayish-blue: hsl(228, 12%, 48%);
+	--white: hsl(0, 0%, 100%);
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Fraunces', serif;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+	background-color: var(--cream);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+main {
+	padding: 2rem;
+}
+
+.card {
+	margin: 2rem 0;
+	width: 100%;
+	max-width: 375px;
+	border-radius: 15px;
+	overflow: hidden;
+	background-color: var(--white);
+}
+
+img {
+	width: 100%;
+}
+
+.card-body {
+	padding: 2rem;
+}
+
+.title {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--dark-grayish-blue);
+	letter-spacing: 3px;
+	margin-bottom: 1.6rem;
+}
+
+.perfume {
+	font-family: 'Fraunces', serif;
+	color: var(--very-dark-blue);
+	font-size: 3.2rem;
+	line-height: 1;
+	margin-bottom: 2rem;
+}
+
+.text {
+	line-height: 1.6;
+	color: var(--dark-grayish-blue);
+	margin-bottom: 4rem;
+}
+
+.prices {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+	margin-bottom: 2rem;
+}
+
+.promo-price {
+	font-family: 'Fraunces', serif;
+	font-size: 4rem;
+	color: var(--dark-cyan);
+}
+
+.normal-price {
+	font-weight: normal;
+	text-decoration: line-through;
+	color: var(--dark-grayish-blue);
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	gap: 1.6rem;
+	width: 100%;
+	padding: 2rem;
+	border-radius: 10px;
+	border: none;
+	background-color: var(--dark-cyan);
+	color: var(--white);
+	font-size: 2rem;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: hsl(158, 36%, 45%);
+}
+
+.btn svg {
+	width: 24px;
+	height: 24px;
+}
+
+@media (min-width: 768px) {
+	body {
+		height: 100vh;
+	}
+
+	.card {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 68rem;
+	}
+
+	img {
+		height: 100%;
+	}
+
+	.prices {
+		margin-bottom: 4rem;
+	}
+
+	.card-body {
+		padding: 4rem;
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
