@@ -63,7 +63,7 @@ img {
 .perfume {
 	font-family: 'Fraunces', serif;
 	color: var(--very-dark-blue);
-	font-size: 3.2rem;
+	font-size: 3rem;
 	line-height: 1;
 	margin-bottom: 2rem;
 }
@@ -71,7 +71,7 @@ img {
 .text {
 	line-height: 1.6;
 	color: var(--dark-grayish-blue);
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 
 .prices {
@@ -125,7 +125,7 @@ img {
 	.card {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		max-width: 68rem;
+		max-width: 60rem;
 	}
 
 	img {
@@ -133,11 +133,11 @@ img {
 	}
 
 	.prices {
-		margin-bottom: 4rem;
+		margin-bottom: 3rem;
 	}
 
 	.card-body {
-		padding: 4rem;
+		padding: 2.5rem;
 	}
 }
 
