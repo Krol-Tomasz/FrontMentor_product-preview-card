@@ -83,7 +83,7 @@ img {
 
 .promo-price {
 	font-family: 'Fraunces', serif;
-	font-size: 4rem;
+	font-size: 3.6rem;
 	color: var(--dark-cyan);
 }
 
@@ -126,6 +126,7 @@ img {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		max-width: 60rem;
+		max-height: 43.5rem;
 	}
 
 	img {
